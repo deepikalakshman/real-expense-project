@@ -18,7 +18,7 @@ npm install
 cp backend.service /etc/systemd/system/backend.service
 
 dnf install mysql -y
-mysql -h my sql.deepulucky.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h mysql.deepulucky.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
 systemctl daemon-reload
 systemctl enable backend
 systemctl start backend
