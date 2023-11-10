@@ -3,6 +3,8 @@ dnf module disable nodejs -y
 dnf module enable nodejs:18 -y
 
 dnf install nodejs -y
+cp backend.service /etc/systemd/system/backend.service
+#we need to create this file before going into any directory so we are adding this point over here
 
 useradd expense
 
