@@ -15,7 +15,6 @@ unzip /tmp/backend.zip
 cd /app
 npm install
 
-cp /home/centos/real-expense-project/backend.service /etc/systemd/system/backend.service
 
 dnf install mysql -y
 mysql -h mysql.deepulucky.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
